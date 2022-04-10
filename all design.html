@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8"> <!-- For Bangla Font -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css"> <!-- color Links -->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+<script src="W3.JS.js"></script>  <!-- W3.Js library -->
+<link rel="stylesheet" href="W3.CSS-my.css">  <!-- W3.CSS library -->
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Icon Library -->
+<head>
+  <title>Demo Page</title>
+  <meta name="description" content="">   <!-- Complete it-->
+  <meta name="keywords" content="">    <!-- Complete it-->
+   
+  <!-- Search engine related-->
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+
+  <link rel="icon" type="image/jpg" sizes="16x16" href="#"> <!-- favicon,  Edit it -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!-- Jquery Library -->
+   <!-- Bootstrap 4  Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+          body, html {
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-img {
+      /* The image used */
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-image.jpg");
+    
+      min-height: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .my-dark {
+      background-color:rgba(0, 0, 0, 0.5);
+    }
+
+    .my-h-v-center-container {
+  height: 600px; /* Edit */
+  border: 0; 
+}
+
+
+
+
+
+
+
+
+.my-card {
+    margin:10px;
+}
+
+
+.all {
+    display:flex;
+}
+.cl-1 { height:100%;width:auto; }
+.slide-container {
+       
+       margin-left:90px;
+       margin-right:90px;
+       margin-top:20px;
+       margin-bottom:20px;
+       border:1px solid gray;
+       }
+.my-price { color:red }   
+a { text-decoration:none; }    
+
+@media screen and (max-width:400px)
+{
+      .slide-container {
+            margin:15px!important;
+      }
+             
+} 
+.res-title { font-size:16px; }  
+.res-img { height:180px;overflow:hidden;background-color:red; }  
+.res-flow { height:200px;overflow:hidden; }  
+.res-button { font-size:12px;padding:5px; }    
+ 
+@media screen and (max-width:600px)
+{
+  .res-button { font-size:12px;padding:5px; }
+}
+</style>
+<script>   //jquery goes here
+$(document).ready(function(){
+ // $("selector").event(function(){ //event=click,dbclick,mouseenter,mouseleave,hover,focus[click on],blur[click outside].
+ //   $("selector").action(interval); //hide(),show(),toggle(),fadeIn(),fadeOut(),fadeToggle(),addClass(""),removeClass(""),css("property","value")
+  //});
+  $("#drop_btn").hover(function(){
+        $("#dropdown").slideDown(100);
+  });
+  $("#drop_btn").mouseleave(function(){
+        $("#dropdown").slideUp(100);
+  });
+});
+</script>  
+</head>
+<body class="w3-sans-serif">
+
+
+<div class="my-row w3-text-white" style="background-color: rgb(44, 21, 65);">
+      <div class="my-logo w3-center">
+            <img src="cuet.png" style="max-width:60px;min-width:30px">
+      </div>
+      <div class="my-title">
+            <div class="w3-padding-16">
+            <h5 class="w3-text-lime">Chittagong University of Engineering & Technology</h5>
+            <p> Admission Session 2020-2021</p>
+            
+      </div>
+      </div>
+
+      <div class="my-navbar">
+                  <div class="w3-bar w3-padding">
+                        <div class="w3-bar-item w3-button w3-right w3-hide-large w3-margin-left w3-border-left w3-blue w3-round"><i class="fa fa-align-justify"></i></div>
+                        <a class="w3-bar-item w3-button w3-right w3-border w3-border-white w3-round w3-hide-small" href="#login">Login</a>
+                        <div class="w3-bar-item w3-button w3-right my-blue w3-round w3-margin-left w3-margin-right w3-hide-small">New Aplication</div>
+                        <div class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium w3-border-right" id="drop_btn">
+                              
+                              <div clas="w3-dropdown-hover">
+                                  <div>Find <i class="fa fa-caret-down"></i></div>
+                                  <div id="dropdown" class="w3-dropdown-content w3-bar-block w3-stretch" style="margin-top:8px;">
+                                        <a href="#" class="w3-bar-item w3-button">Link</a>
+                                        <a href="#" class="w3-bar-item w3-button">Link</a>
+                                        <a href="#" class="w3-bar-item w3-button">Link</a>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium my-hide-large">Help Desk</div>
+                        <div class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium">General Question</div>
+                        <div class="w3-bar-item w3-button w3-right w3-hide-small w3-hide-medium">Application Process</div>
+                        <div class="w3-bar-item w3-button my-blue w3-right w3-round-large w3-hide-small">Home</div>
+                  </div>
+      </div>
+</div>
+
+
+
+<div class="w3-container w3-black w3-center">
+      <h3>Here some Button Features</h3>
+<div class="w3-panel w3-center">
+
+
+      <a class="my-button-1">my-button-1</a>
+      <a class="my-button-1c">my-button-1c</a>
+
+</div>
+<div class="w3-panel w3-center">
+      <a class="my-button-2">my-button-2</a>
+      <a class="my-button-3"><span>my-button-3|span</span></a>
+      <a class="my-button-4">my-button-4</a>
+      <a class="my-button-5"><span>my-button-5|span</span></a>
+      <div class="my-button-6"><span>my-button-6|span</span></div>
+      <div class="my-button-7"><span class="s-1"><span class="s-2"><span class="s-3">my-button-7|span-3</span></span></span></div>
+      <div class="my-button-7-2"><span class="s-1-2"><span class="s-2-2"><span class="s-3-2">my-button-7-2|span-3-2</span></span></span></div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="w3-panel">
+<div class="w3-center"><h3>Grid Design Skill</h3></div>
+
+      <div class="my-row">
+            <div class="my-side-7-10" style="height:auto">
+                  
+                 
+                       <div class="my-row w3-white w3-border w3-border-blue w3-large">
+                              <div class="my-side-8-10 w3-text-blue" style="height:auto;">ভর্তির পরীক্ষার আবেদনের সচিত্র বিবরণ ২০২০-২০২১।</div>
+                              <div class="my-side-2-10 w3-center w3-white"><div class="my-blue w3-button w3-round w3-text-white">Download </div></div>
+                       </div>
+<br>
+                        <div class="my-row w3-white w3-border w3-border-blue w3-large">
+                              <div class="my-side-8-10 w3-text-red" style="height:auto;">২০২০-২০২১ শিক্ষাবর্ষে প্রথম বর্ষ স্নাতক (সম্মান) শ্রেনীর ভর্তি পরীক্ষায় আগ্রহী শিক্ষার্থীদের অনলাইনে আবেদনের সময়সীমা বর্ধিতকরণ সংক্রান্ত বিজ্ঞপ্তি।</div>
+                              <div class="my-side-2-10 w3-center w3-white"><div class="my-blue w3-button w3-round w3-text-white">Download  </div></div>
+                        </div>
+                 
+<br>                        
+                       <div class="my-row w3-white w3-border w3-border-blue w3-large">
+                              <div class="my-side-8-10 w3-text-red w3-block" style="height:auto;">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় থেকে উত্তীর্ণ শিক্ষার্থীদের আবেদন প্রক্রিয়া শুরু হয়েছে।</div>
+                             
+                       </div>
+
+
+                       <div class="w3-panel w3-white w3-border w3-border-blue w3-large">
+                             <h4 class=" w3-text-blue w3-block w3-border-bottom w3-margin-top" style="height:auto;">আবেদনের নির্দেশনাবলী</h4>
+                             <div class="" style="height:300px;overflow:auto">
+                                  <p>
+                                   আবেদনকারী জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ের ভর্তি পরীক্ষা সংক্রান্ত ওয়েবসাইটে (juniv-admission.org) প্রয়োজনীয় তথ্য প্রদান করে ন্যূনতম যোগ্যতা যাচাইপূর্বক নিজ মোবাইল নম্বর নিশ্চিত করবেন এবং প্রেরিত পাসওয়ার্ড পরবর্তীতে আবেদন/ব্যবহারের জন্য সংরক্ষণ করবেন।
+                                   আবেদনযোগ্য ইউনিটগুলোর তালিকা থেকে আবেদনকারী আবেদন ফি প্রদান পূর্বক এক বা একাধিক ইউনিটে আবেদন করতে পারবেন। নগদ, বিকাশ অথবা রকেট-এর মাধ্যমে নির্ধারিত আবেদন ফি প্রদান করে ওয়েবসাইটে লগইন করার পর প্রার্থীর নিজ নিজ প্রোফাইল-এ স্বাক্ষর ও ছবি আপলোড করে আবেদন সম্পন্ন করতে হবে এবং প্রবেশপত্র সংগ্রহ করতে হবে। সর্বমোট ৫ টি ধাপে (ক, খ, গ, ঘ, ঙ) এই আবেদন সম্পন্ন করতে হবে।
+                                   ক. আবেদনকারীর ন্যূনতম শিক্ষাগত যোগ্যতা যাচাই ও প্রয়োজনীয় তথ্য প্রদানঃ
+                                   
+                                   juniv-admission.org ওয়েবসাইটের হোমপেজে “নতুন আবেদন” -এ ক্লিক করে, আবেদনকারীকে উচ্চমাধ্যমিক/সমমান ও মাধ্যমিক/সমমান -এর শিক্ষাবোর্ড, পাশের সাল, রোল নং প্রদান করতে হবে। সকল তথ্য পূরণের পর “সাবমিট করুন” – এ ক্লিক করলে পরবর্তী স্ক্রীনে আবেদনকারী তার উচ্চমাধ্যমিক/সমমান ও মাধ্যমিক/সমমানের তথ্য, ব্যক্তিগত তথ্য এবং সংশ্লিষ্ট শিক্ষাগত যোগ্যতা অনুযায়ী আবেদনযোগ্য ইউনিটসমূহের তালিকা দেখতে পাবেন। আবেদনকারীকে সকল তথ্য মিলিয়ে “নিশ্চিত করুন” বাটনে ক্লিক করতে হবে। ঊন্মুক্ত বিশ্ববিদ্যালয় থেকে উত্তীর্ণ শিক্ষার্থীদেরকে একইভাবে শিক্ষাবোর্ড হতে “বাংলাদেশ ঊন্মুক্ত বিশ্ববিদ্যালয়” অপশনটি সিলেক্ট করতে হবে।
+                                   
+                                   O লেভেল এবং A লেভেল উত্তীর্ণ শিক্ষার্থীকে শিক্ষাবোর্ড থেকে “O-Level/A- Level” অপশনটি সিলেক্ট করতে হবে।
+                                   তৎক্ষণাৎ ভর্তির নতুন আবেদনের স্ক্রীনটিতে উচ্চমাধ্যমিকের বোর্ড সিলেক্ট করে “A-level/O-level apply”-এ ক্লিক করতে হবে।
+                                   অতঃপর স্ক্রীনে আবেদনকারীর সকল প্রয়োজনীয় তথ্য ( যেমনঃ A-level info, O-level info, subject, grade) ইত্যাদি প্রদান করতে হবে। সবশেষে “Select Document”-এ ক্লিক করে আবেদনকারীর O-level এবং A-level এর স্ক্যান করা Transcript এর কপিসমূহ (Size: সর্বোচ্চ 2MB; Format: jpg/pdf) আপলোড করে “Submit” বাটন চাপতে হবে।
+                                   খ. মোবাইল নম্বর যাচাই ও নিশ্চিতকরণঃ
+                                   
+                                   এই ধাপে আবেদনকারীকে ১১ ডিজিটের মোবাইল নম্বরটি (আবেদনকারীর নিজের অথবা অভিভাবকের) প্রদান করে “নিশ্চিত করুন” বাটনে ক্লিক করতে হবে। আবেদনকারীর প্রদত্ত মোবাইল নম্বরে SMS-এর মাধ্যমে একটি পাসওয়ার্ড পাঠানো হবে ও প্রেরিত পাসওয়ার্ডটি নির্ধারিত ঘরে পূরণ করে “নিশ্চিত করুন” বাটনে ক্লিক করতে হবে এবং এই পাসওয়ার্ডটি পরবর্তীতে আবেদনের জন্য অবশ্যই সংরক্ষণ করতে হবে। সতর্কতাঃ
+                                   
+                                   একই মোবাইল নম্বর ব্যবহার করে একজন আবেদনকারী একাধিক ইউনিটে আবেদন করতে পারবে। তবে উক্ত মোবাইল নম্বর ব্যবহার করে একই ইউনিটে একাধিক আবেদন করা যাবে না।
+                                   এক্ষেত্রে মোবাইল নম্বরটি সতর্কতার সাথে প্রদান করা জরুরী, কেননা এই মোবাইল নম্বরটিই ভবিষ্যতে সকল প্রকার যোগাযোগ সংশ্লিষ্ট কার্যক্রমে ব্যবহৃত হবে।
+                                   মোবাইল নম্বর কিংবা পাসওয়ার্ড ভুলে গেলে ওয়েবসাইটে “অনুসন্ধান” ট্যাব এ ক্লিক করে মোবাইল নম্বর পুনরুদ্ধার”/“পাসওয়ার্ড পুনরুদ্ধার” সিলেক্ট করে প্রয়োজনীয় তথ্য প্রদান করা সাপেক্ষে “মোবাইল নম্বর পুনরুদ্ধার করুন”/“সাবমিট করুন” -এ ক্লিক করলে মোবাইল নম্বর/ পাসওয়ার্ড পুনরুদ্ধার করা যাবে।
+                                   গ. আবেদন প্রক্রিয়া ও ফি প্রদানঃ
+                                   
+                                   বিভিন্ন ইউনিটে আবেদনের জন্য আবেদন ফি (সার্ভিস চার্জসহ) নিম্নরূপ:
+                                   
+
+
+                                  </p>
+                             </div>
+                            
+                      </div>
+                  
+            </div>
+                  
+            <div class="my-side-3-10">
+                 <div class="w3-container w3-white w3-border w3-border-blue w3-large" style="height:100%">
+                       <br>
+                       <div class="w3-block w3-button my-blue w3-text-white w3-center">Notice Board</div><br>
+                       <p>
+                             <span class="w3-text-gray">২৪ জুলাই, ২০২১</span><br>
+                             <span class="w3-text-blue">২০২০-২০২১ শিক্ষাবর্ষে প্রথম বর্ষ স্নাতক (সম্মান) শ্রেনীর ভর্তি পরীক্ষায় আগ্রহী শিক্ষার্থীদের অনলাইনে আবেদনের সময়সীমা বর্ধিতকরণ সংক্রান্ত বিজ্ঞপ্তি।</span>
+                             <span class="w3-text-gray">০৬ জুলাই, ২০২১</span><br>
+                             <span class="w3-text-blue">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় থেকে উত্তীর্ণ শিক্ষার্থীদের আবেদন প্রক্রিয়া শুরু হয়েছে।</span><br>
+                             <span class="w3-text-gray">১৮ জুন, ২০২১</span><br>
+                             <span class="w3-text-blue">২০২০-২০২১ শিক্ষাবর্ষে প্রথম বর্ষ স্নাতক (সম্মান) শ্রেনীতে ভর্তি বিজ্ঞপ্তি।</span>
+                       </p>
+                       
+                 </div>
+            </div>
+      </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="slide-container w3-card-4">
+      <div class="responsive" style="display:flex">
+      
+
+
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      <div class="my-card w3-border w3-hover-border-red w3-border w3-hover-border-red">
+      <div class="w3-panel">
+      <div class="w3-center res-img">
+      <img class="cl-1" src="pic.jpg">
+      <div class="text-on-img"></div>
+      </div>
+      <a href="" class="w3-margin-top">
+      <div class="res-flow">
+      <p class="res-title">
+      Title
+      </p>
+      <p>Author</p>
+      </div>
+      
+      </a>
+      <button class="w3-dark-gray w3-hover-red w3-button w3-block res-button" onclick="ad2cart()">View</button>
+      
+      </div>
+      </div>
+      
+     
+      
+      
+      </div>
+      </div>
+      
+      <script type="text/javascript" src="js/slick.min.js"></script>
+      <script type="text/javascript" src="js/my.js"></script>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="w3-sans-serif bg-img" id="login">
+
+<div class="my-h-v-center-container w3-text-white">
+
+      <div class="w3-container my-dark">
+      
+      
+      <form>
+          
+                <div class="w3-panel">
+                      <div class="w3-center"><h4>Login Form</h4></div>
+                 <h6>Username:</h6>
+                 <input type="text" name="" class="w3-border w3-border-white w3-mobile my-dark w3-round w3-text-white" placeholder="Enter Username">
+                </div> 
+      
+                <div class="w3-panel">
+                 <h6>Password:</h6>
+                 <input type="password" name="" class="w3-border w3-border-white w3-mobile my-dark w3-round w3-text-white" placeholder="Enter Password"><br>
+                </div>
+      
+                 <div class="w3-center w3-margin-bottom">
+                 <input type="submit" value="Login" name="" class="w3-button my-dark"><br>
+                 </div>
+      
+      </form>
+      
+      </div>
+      
+      
+      </div>
+</div>
+
+
+
+
+
+
+
+    <div class="my-nevi">
+      <div class="w3-container w3-center w3-large w3-padding">
+            <div class="w3-panel my-text-yellow">জরুরী যোগাযোগ ( সকাল ১০:০০ টা থেকে সন্ধ্যা ০৭:০০ টা পর্যন্ত ) <b>[ Footer ]</b></div>
+      </div>
+      
+      <div class="my-row w3-text-white w3-large">
+            <div class="my-side-1-4 w3-center">
+             <img src="ju.jpg" style="width:70%">
+            </div>
+            <div class="my-side-1-4">
+                 <p>
+                  পাসওয়ার্ড, আবেদন ফি পেমেন্ট সংক্রান্ত<br>
+                  ০১৩২৪১৭৯৭৭৪-৮১
+                 </p>
+            </div>
+            <div class="my-side-1-4">
+                 <p>
+                  ছবি, স্বাক্ষর, প্রবেশপত্র ও সিটপ্ল্যান সংক্রান্ত<br>
+                  ০১৩২৪১৭৯৭৭৪-৮১
+                 </p>
+            </div>
+            <div class="my-side-1-4">
+                 <p>
+                  সাধারণ জিজ্ঞাসা ও অন্যান্য
+                  ০১৩২৪১৭৯৭৮২-৫<br>
+                  ২৪ ঘণ্টা খোলা থাকবে<br>
+                  juniv.admsn.help@juniv.edu
+                 </p>
+            </div>
+      </div>
+      
+      
+      </div>
+      
+      
+      
+      
+
+
+<script>
+myShow=w3.slideshow("selector",interval);  //for slide show
+</script>
+<!-- <button onclick="myShow.previous()"></button>  Slide butto 
+      <button onclick="myShow.next()"></button> -->
+
+
+</body>
+</html>

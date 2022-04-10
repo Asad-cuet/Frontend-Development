@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8"> <!-- For Bangla Font -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css"> <!-- color Links -->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<script src="W3.JS.js"></script>  <!-- W3.Js library -->
+<link rel="stylesheet" href="W3.CSS-my.css">  <!-- W3.CSS library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- Icon Library -->
+<head>
+  <title>Page Title</title>
+  <meta name="description" content="">   <!-- Complete it-->
+  <meta name="keywords" content="">    <!-- Complete it-->
+   
+  <!-- Search engine related-->
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+
+  <link rel="icon" type="image/jpg" sizes="16x16" href="Book cellar bd icon.jpg"> <!-- favicon,  Edit it -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <!-- Jquery Library -->
+   <!-- Bootstrap 4  Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+</style>
+<script>   //jquery goes here
+$(document).ready(function(){
+  $("#print_button").click(function(){ //event=click,dbclick,mouseenter,mouseleave,hover,focus[click on],blur[click outside].
+    $("#print_button").css("display","none"); //hide(),show(),toggle(),fadeIn(),fadeOut(),fadeToggle(),addClass(""),removeClass(""),css("property","value")
+    window.print()
+  });
+});
+</script>  
+</head>
+<body>
+
+<div class="w3-container w3-center my-yellow">
+  <div class="w3-panel">
+    <h3>Book Cellar Library</h3>
+</div>
+<p><b>Address:</b>Shoronika-Road,Savar,Dhaka</p>
+<p><b>Number:</b>01684604855</p>
+</div>
+
+<div class="w3-panel">
+  <div class="w3-right"><p><b>Time:</b> 3:53 PM </p></div>
+  <div class="w3-right"><p><b> Date:</b> 29-7-2021</p></div>
+</div>
+<div class="w3-container w3-large">
+  <p><b>Customer Name: </b>Asadul Islam</p>
+  <p><b>Address: </b>Radio colony,Savar,Dhaka</p>
+  <p><b>Order ID: </b>1265</p>
+  <p><b>Ordered Item: </b></p>
+  <table class="w3-table-all">
+    <tr>
+      <th>Serial Number</th>
+      <th>Book Title</th>
+      <th>Book Author</th>
+      <th>Quantity</th>
+      <th>Per Price</th>
+      <th>Subtotal Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Physics</td>
+      <td>Shahjahan Tapan</td>
+      <td>3</td>
+      <td>320 tk</td>
+      <td>960 tk</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Chemistry</td>
+      <td>Kajol brothers</td>
+      <td>2</td>
+      <td>310 tk</td>
+      <td>620 tk</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ICT</td>
+      <td>The Royal</td>
+      <td>1</td>
+      <td>260 tk</td>
+      <td>260 tk</td>
+    </tr>
+    <tr>
+      <td colspan="5" class="w3-border-right">Grand Price</td>
+      <td>1940 tk</td>
+    </tr>
+  </table>
+  <div class="w3-center w3-margin"><p>Thanks for Shopping from Book Cellar</p></div>
+</div>
+
+
+
+<div class="w3-panel w3-center w3-text-white">
+  <div id="print_button" class="w3-button my-hover-f my-blue">Print/Download</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

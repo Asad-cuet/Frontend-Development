@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="W3.JS.js"></script>
+<link rel="stylesheet" href="W3.CSS.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<style>
+</style>
+<script>   //jquery goes here
+
+ // 1st query start
+$(document).ready(function(){
+  $("#drop-bar").click(function(){
+    $("#drop-content").toggle(500);
+    $("#up-btn").removeClass("fa fa-angle-double-down");
+    $("#up-btn").addClass("fa fa-angle-double-up");
+    $("#drop-bar").click(function(){
+	   $("#up-btn").removeClass("fa fa-angle-double-up");
+	   $("#up-btn").addClass("fa fa-angle-double-down");		
+	  }); 
+  });
+  });
+  $(document).ready(function(){
+  $("selector").event(function(){
+    $("selector").action(interval);
+  });
+});
+
+  $(document).ready(function(){
+  $("#remove-btn").click(function(){
+    $("#side-content").hide(500);
+  });
+});
+
+ // 1st query end
+
+
+  // 2nd query start
+
+  $(document).ready(function(){
+  $("#drop-bar2").click(function(){
+    $("#drop-content2").toggle(500);
+    $("#up-btn2").removeClass("fa fa-angle-double-down");
+    $("#up-btn2").addClass("fa fa-angle-double-up");
+    $("#drop-bar2").click(function(){
+	   $("#up-btn2").removeClass("fa fa-angle-double-up");
+	   $("#up-btn2").addClass("fa fa-angle-double-down");		
+	  }); 
+  });
+  });
+
+
+  $(document).ready(function(){
+  $("#remove-btn2").click(function(){
+    $("#side-content2").hide(500);
+  });
+});
+
+
+  $(document).ready(function(){
+  $("#drop-page-btn").click(function(){
+    $("#drop-page").toggle(500);
+    $("#up-btn2").removeClass("fa fa-angle-double-down");
+    $("#up-btn2").addClass("fa fa-angle-double-up");
+    $("#drop-bar2").click(function(){
+	   $("#up-btn2").removeClass("fa fa-angle-double-up");
+	   $("#up-btn2").addClass("fa fa-angle-double-down");		
+	  }); 
+  });
+});
+// 2nd query end
+
+
+  $(document).ready(function(){
+  $("selector").event(function(){
+    $("selector").action(interval);
+  });
+});
+
+</script>  
+</head>
+<body>
+<!-- 1st Responsive bar start here-->
+<!-- Leptop Bar-->
+<h1>Bar1</h1>
+<div class="w3-row w3-teal">   
+<div href=""  class="w3-col l1 m1 s1 w3-button  w3-hide-large w3-hide-medium" id="side-btn" onclick="w3.show('#side-content')"><span class="fa fa-align-justify"></span></div>
+<a href="" class="w3-col l1 m1 w3-button  w3-hide-small">Home</a>
+<a href="" class="w3-col l1 m1 w3-button  w3-hide-small">Link</a>
+<div class=" w3-dropdown-hover w3-hide-small"><button class="w3-button">Dropdown</button> 
+<div class="w3-dropdown-content w3-bar-block w3-red w3-card-4">
+<a href="" class="w3-col  w3-button">Link</a>
+<a href="" class="w3-col  w3-button">Link</a>
+</div>
+</div>
+<div class="w3-button w3-col l1 m1 s2  w3-right  "><span class="fa fa-search"></span></div>
+<input class="w3-input w3-col l2 m1 s5 w3-right  " type="text" placeholder="Search...">
+
+</div>
+
+
+
+
+ <!-- Sidebar -->  
+<div class="w3-bar-block w3-sidebar w3-black w3-animate-left w3-responsive" id="side-content" style="display:none">   
+<div class="w3-row">
+<a href="" class="w3-col w3-button w3-large w3-left-align" style="width:70%">Link</a>
+<div class="w3-col w3-button w3-large w3-center" style="width:30%" id="remove-btn"><i class="fa fa-remove"></i></div>
+</div>
+<a href="" class="w3-bar-item w3-button w3-large">Link</a>
+<div class="w3-large w3-dropdown-click"  id="drop-bar"><button  class="w3-button">Dropdown<i id="up-btn" class="fa fa-angle-double-down w3-button"></i></button>
+<div class="w3-dropdown-content w3-bar-block w3-red w3-card-4" id="drop-content">
+<a href="" class="w3-bar-item w3-button">Link</a>
+<a href="" class="w3-bar-item w3-button">Link</a>
+</div>
+</div>
+</div>
+
+<!--1st Responsive bar end here-->
+
+
+
+
+
+
+
+
+<!-- 2ns Responsive bar start here-->
+<!-- Leptop Bar-->
+<h1>Bar2</h1>
+<div class="w3-row w3-teal">   
+<div href=""  class="w3-col l1 m1 s1 w3-button  w3-hide-large w3-hide-medium" id="side-btn" onclick="w3.show('#side-content2')"><span class="fa fa-align-justify"></span></div>
+<a href="" class="w3-col l1 m1 w3-button  w3-hide-small">Home</a>
+<a href="" class="w3-col l1 m1 w3-button  w3-hide-small">Link</a>
+<div class="w3-col l1 m2 s5 w3-button" id="drop-page-btn">Dropdown<i id="up-btn2" class="fa fa-angle-double-down"></i></div>
+<div class="w3-button w3-col l1 m1 s1  w3-right  "><span class="fa fa-search"></span></div>
+<input class="w3-input w3-col l2 m1 s3 w3-right  " type="text" placeholder="Search...">
+
+</div>
+
+
+
+
+ <!-- Sidebar -->  
+<div class="w3-bar-block w3-sidebar w3-black w3-animate-left w3-responsive" id="side-content2" style="display:none">   
+<div class="w3-row">
+<a href="" class="w3-col w3-button w3-large w3-left-align" style="width:70%">Link</a>
+<div class="w3-col w3-button w3-large w3-center" style="width:30%" id="remove-btn2"><i class="fa fa-remove"></i></div>
+</div>
+<a href="" class="w3-bar-item w3-button w3-large">Link</a>
+<div class="w3-large w3-dropdown-click"  id="drop-bar2"><button  class="w3-button">Dropdown<i id="up-btn2" class="fa fa-angle-double-down w3-button"></i></button>
+<div class="w3-dropdown-content w3-bar-block w3-red w3-card-4" id="drop-content2">
+<a href="" class="w3-bar-item w3-button">Link</a>
+<a href="" class="w3-bar-item w3-button">Link</a>
+</div>
+</div>
+</div>
+
+
+ <!-- Drop Page content -->  
+<div class="w3-container w3-black" id="drop-page" style="display:none;">
+
+<div class="w3-row ">
+
+<div class="w3-col l4">
+<h3>Category</h3>
+<div class="w3-row ">
+<a class="w3-col l7 w3-button" href="">Link</a>
+<a class="w3-col l7 w3-button" href="">Link</a>
+<a class="w3-col l7 w3-button" href="">Link</a>
+
+</div>
+
+</div>
+
+<div class="w3-col l4">
+<h3>Category</h3>
+<div class="w3-row ">
+<a class="w3-col l7 w3-button" href="">Link</a>
+<a class="w3-col l7 w3-button" href="">Link</a>
+
+
+</div>
+
+</div>
+<div class="w3-col l4">
+<h3>Category</h3>
+<div class="w3-row ">
+<a class="w3-col l7 w3-button" href="">Link</a>
+
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!--2nd Responsive bar end here-->
+
+
+</body>
+</html>

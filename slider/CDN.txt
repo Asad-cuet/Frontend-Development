@@ -1,0 +1,12 @@
+
+website:http://kenwheeler.github.io/slick/
+CSS
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+JS
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+qSRi#sb[n]a{GQBA8qh2Z2c5

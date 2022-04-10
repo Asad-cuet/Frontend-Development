@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="cls"></div>
+<div id="id01"></div>
+<h1></h1>
+<img id="image" src="img_nature.jpg" style="width:100px;height:auto;">
+
+
+
+<p>Using .innerHTML</p>
+<button onclick="func1()">ID</button>
+<button onclick="func2()">Class</button>
+<button onclick="func3()">Tag</button>
+<p>Using Other</p>
+<button onclick="func4()">Alert</button>
+<button onclick="func5()">Write</button>
+<button onclick="func6()">Console</button>
+<p>Click the button to print the current page.Also you can save the current page as PDF</p>
+<button onclick="window.print()">Print this page</button>
+<button onclick="location.reload();">Reload this page</button>
+<button onclick="location.replace('https://www.w3schools.com');">Redirect to w3schools</button>
+
+
+<p>Variable Study</p>
+<button onclick="func7()">Variable</button>
+<p>Atribute Changing</p>
+<button onclick="func8()">change Picture src</button>
+
+
+
+<h4 id="screen"></h4>
+
+
+<p>I'm <span class="typed" data-typed-items="Fullstack Developer, Freelancer, Photographer, Little Graphics Designer"></span></p>
+
+<script>
+function func1() {
+document.getElementById("id01").innerHTML="Showing by Id";
+
+}
+function func2() {
+document.getElementsByClassName("cls").innerHTML="Showing by class";
+
+}
+function func3() {
+document.getElementByTagName("h1").innerHTML="Showing by TagName";
+
+}
+function func4() {
+window.alert(5 + 6);
+
+}
+function func5() {
+document.write(5+8);
+
+}
+function func6() {
+console.log(5+8);
+
+}
+function func7() {
+ var a,b,c;
+ a=10;b=10;
+ c=a+b;
+var x=document.getElementById("id01");
+x.innerHTML=c;
+
+}
+function func8() {
+ var img=document.getElementById("image");
+ img.src="img_avatar.png";
+
+}
+
+
+
+document.getElementById("screen").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner window height: " + window.innerHeight + "px";
+
+
+// window.location.href = "http://www.w3schools.com";
+// current screen size
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+
+//Typing
+  const typed = select('.typed')
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+</script>
+
+
+
+</body>
+</html>

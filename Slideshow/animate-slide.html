@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.animate-slide1 {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  animation-name: example1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.animate-slide2 {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.animate-slide3 {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  animation-name: example3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.animate-slide4 {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  animation-name: example4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+  0%   {background-color:red; left:0%; top:0px;}
+  25%  {background-color:yellow; left:25%; top:0px;}
+  50%  {background-color:blue; left:50%; top:0px;}
+  75%  {background-color:green; left:75%; top:0px;}
+  100% {background-color:red; left:0%; top:0px;}
+}
+@keyframes example2 {
+  0%   {background-color:red; left:25%; top:0px;}
+  25%  {background-color:yellow; left:50%; top:0px;}
+  50%  {background-color:blue; left:75%; top:0px;}
+  75%  {background-color:green; left:0%; top:0px;}
+  100% {background-color:red; left:25%; top:0px;}
+}
+@keyframes example3 {
+  0%   {background-color:red; left:50%; top:0px;}
+  25%  {background-color:yellow; left:75%; top:0px;}
+  50%  {background-color:blue; left:0%; top:0px;}
+  75%  {background-color:green; left:25%; top:0px;}
+  100% {background-color:red; left:50%; top:0px;}
+}
+@keyframes example4 {
+  0%   {background-color:red; left:75%; top:0px;}
+  25%  {background-color:yellow; left:100%; top:0px;}
+  50%  {background-color:blue; left:25%; top:0px;}
+  75%  {background-color:green; left:50%; top:0px;}
+  100% {background-color:red; left:75%; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div class="animate-slide1"><img src="img_lights.jpg"></div>
+<div class="animate-slide2"><img src="img_nature.jpg"></div>
+<div class="animate-slide3"><img src="img_mountains.jpg"></div>
+<div class="animate-slide4"><img src="img_snow.jpg"></div>
+
+</body>
+</html>

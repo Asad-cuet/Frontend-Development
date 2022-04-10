@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+
+<input type="text" value="Hello World" id="my-text-to-copy">
+
+<button onclick="my-copy()">Copy text</button>
+
+
+<script>
+function my-copy() {
+  var copyText = document.getElementById("my-text-to-copy");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+
+</script>
+
+</body>
+</html>

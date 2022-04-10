@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-notific-button {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.my-notific-button:hover {
+  background: red;
+}
+
+.my-notific-button .my-notific-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Notification Button</h1>
+
+<a href="#" class="my-notific-button">
+  <span>Inbox</span>
+  <span class="my-notific-badge">3</span>
+</a>
+
+</body>
+</html>
